@@ -59,28 +59,31 @@ const Display = ({ contract, account }) => {
   };
   return (
     <>
-     <div className='flex w-full justify-center items-left'>
-  <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 py-20 px-4'>
+    <div className='flex w-full justify-center items-left'>
+    <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 py-20 px-4'>
+
     <div className='flex flex-col flex-1 items-center justify-center w-full mf:mt-0 mt-10'>
-      <div className='p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism'>
-        
-        <input
-          type="text"
-          placeholder="Enter Address"
-          className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
-        ></input>
-        <button className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer hover:bg-[#2546bd]" onClick={getdata}>
-          My Files
-        </button>
-        <div className="image-list">{data}</div>
+      
+       <div className='p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism'>
+      <input
+        type="text"
+        placeholder="Enter Address"
+        className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-black border-none text-sm white-glassmorphism"
+      ></input>
+      <button className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer hover:bg-[#2546bd]" onClick={getdata}>
+        Get Data
+      </button>
       </div>
-    </div>
-    <div className='flex flex-1 justify-start flex-col mf:mr-10 flex-grow'>
-      <div className="flex-1 flex flex-col justify-start items-start">
-        <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient text-left">
-          Empowering Secure <br/>Data Ownership
-        </h1>
+      <div className="image-list">{data}</div>
       </div>
+
+      <div className='flex flex-1 justify-start flex-col mf:mr-10'>
+    <div className="flex-1 flex flex-col justify-start items-start">
+    <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient text-left">
+    Empowering Secure <br/>Data Ownership
+  </h1>
+      </div>
+
       <div className="flex-1 flex flex-col justify-start items-start">
         <ServiceCard
           color="bg-[#2952E3]"
@@ -92,19 +95,21 @@ const Display = ({ contract, account }) => {
           color="bg-[#8945F8]"
           title="Censorship resistance"
           icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Decentralized file storage systems are often designed to be resistant to censorship and data loss."
+          subtitle="Decentralized storage systems are often designed to be resistant to censorship and data loss."
         />
         <ServiceCard
           color="bg-[#F84550]"
           title="Flexibility and scalability"
           icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Highly scalable and flexible, allowing them to meet the needs of a wide range of users and applications."
+          subtitle="Highly scalable and flexible, allows to meet the needs of a wide range of users and applications."
         />
       </div>
-    </div>
-  </div>
-</div>
+  
+      </div>
 
+
+      </div>
+      </div>
     </>
   );
 };
