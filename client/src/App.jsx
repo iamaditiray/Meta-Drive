@@ -4,7 +4,8 @@ import { ethers } from "ethers";
 import FileUpload from "./components/FileUpload";
 import Display from "./components/Display";
 import Modal from "./components/Modal";
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import Navbar from './components/Navbar'
 import {SiEthereum} from 'react-icons/si';
 import {BsInfoCircle} from 'react-icons/bs';
 import "./App.css";
@@ -55,6 +56,7 @@ function App() {
       
   <div className='min-h-screen'>
     <div className='gradient-bg-welcome'>
+      <Navbar/>
     <div className='flex w-full justify-center items-center'>
       <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 py-20 px-4'>
       <div className='flex flex-1 justify-start flex-col mf:mr-10'>
