@@ -17,8 +17,8 @@ const FileUpload = ({ contract, account, provider }) => {
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: `28328182a476eaf65747`,
-            pinata_secret_api_key: `73bc225bc5e8a1c2789e5ab4fb9e1f6563a8a1808f07da547c0dceb4490e6528`,
+            pinata_api_key: `Your Pinata API KEY`,
+            pinata_secret_api_key: `Your Pinata Secret API KEY`,
             "Content-Type": "multipart/form-data",
           },
         });
