@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./Modal.css";
+
 const Modal = ({ setModalOpen, contract }) => {
   const sharing = async () => {
     const address = document.querySelector(".address").value;
@@ -25,35 +26,36 @@ const Modal = ({ setModalOpen, contract }) => {
   return (
     <>
       <div className="modalBackground">
-        <div className="modalContainer">
-          <div className="title">Share with</div>
+        <div className="p-5 sm:w-1/3 w-1/3 flex flex-col justify-center items-center blue-glassmorphism">
+          <div className="text-lg sm:text-lg text-white py-1 text-left mb-2">Share with</div>
           <div className="body">
             <input
               type="text"
               className="address"
-              placeholder="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-black border-none text-sm white-glassmorphism"
+              placeholder="Enter Address"
             ></input>
           </div>
           <form id="myForm">
-            <select id="selectNumber">
-              <option className="address">People With Access</option>
+            <select id="selectNumber" className="people-with-access">
+              <option>People With Access</option>
             </select>
           </form>
-          <div className="footer">
-            <button
+          <div className="flex gap-5">
+            <button className="text-white w-full mt-5 border-[1px] px-10 py-2 border-[#3d4f7c] rounded-full cursor-pointer hover:bg-[#FF0000]"
               onClick={() => {
                 setModalOpen(false);
               }}
-              
               id="cancelBtn"
             >
               Cancel
             </button>
-            <button onClick={() => sharing()}>Share</button>
+            <button className="text-white w-full mt-5 border-[1px] px-10 py-2 border-[#3d4f7c] rounded-full cursor-pointer hover:bg-[#2546bd]" onClick={() => sharing()}>
+              Share</button>
           </div>
         </div>
       </div>
     </>
   );
 };
+
 export default Modal;

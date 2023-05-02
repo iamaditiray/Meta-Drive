@@ -53,7 +53,7 @@ function App() {
   }, []);
   return (
     <>
-      
+
   <div className='min-h-screen'>
     <div className='gradient-bg-welcome'>
       <Navbar/>
@@ -122,7 +122,7 @@ function App() {
     </div>
     <div className="gradient-bg-modal">
     {!modalOpen && (
-        <button className="flex flex-row w-4/12 justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer text-white hover:bg-[#2546bd]" onClick={() => setModalOpen(true)}>
+        <button className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full w-1/4 cursor-pointer hover:bg-[#2546bd] text-white mb-5" onClick={() => setModalOpen(true)}>
           Share
         </button>
       )}
@@ -132,6 +132,7 @@ function App() {
       </div>
       <Footer />
       </div>
+      
     </>
   );
 }

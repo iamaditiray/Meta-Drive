@@ -4,6 +4,7 @@ import { BsShieldFillCheck } from "react-icons/bs";
 import { BiSearchAlt } from "react-icons/bi";
 import { RiHeart2Fill } from "react-icons/ri";
 
+
 const ServiceCard = ({ color, title, icon, subtitle }) => (
   <div className="flex flex-row justify-start items-start white-glassmorphism p-3 m-2 cursor-pointer hover:shadow-xl">
     <div className={`w-10 h-10 rounded-full flex justify-center items-center ${color}`}>
@@ -46,8 +47,9 @@ const Display = ({ contract, account }) => {
             <img
               key={i}
               src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`}
-              alt="new"
+              alt={`${item.substring(6)}`}
               className="image-list"
+              
             ></img>
           </a>
         );
@@ -63,11 +65,18 @@ const Display = ({ contract, account }) => {
     <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 py-20 px-4'>
 
     <div className='flex flex-col flex-1 items-center justify-center w-full mf:mt-0 mt-10'>
-    <div className='p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism'>
+    <div className='p-10 sm:w-full w-full flex flex-col justify-start items-center blue-glassmorphism'>
 
 {/* image display */}
 
-    <div className="image-list">{data}</div>  
+      {/* <input
+        type="text"
+        placeholder="Enter Address"
+        className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
+      ></input>
+      <button className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer hover:bg-[#2546bd]" onClick={getdata}>
+        Get Data
+      </button> */}
       <input
         type="text"
         placeholder="Enter Address"
@@ -77,7 +86,8 @@ const Display = ({ contract, account }) => {
         Get Data
       </button>
       </div> 
-      </div>
+      <div className="image-list">{data}</div> 
+      </div> 
 
       <div className='flex flex-1 justify-start flex-col mf:mr-10'>
     <div className="flex-1 flex flex-col justify-start items-start">
