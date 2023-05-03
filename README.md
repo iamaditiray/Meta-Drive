@@ -186,4 +186,4 @@ The Dialog box below enables the user to share the access of his account with an
 ## Authors
 - [Aditi Ray](https://github.com/iamaditiray)
 - [Mursalin Sheikh](https://github.com/mosabhai77)
-- [Shagun Singh](https://www.github.com/octokatherine)
+- [Shagun Singh](https://github.com/shagunsingh30)
