@@ -153,13 +153,13 @@ Go to this Site
 
 
 ## Screenshots
-
+  ### FileUpload Component
 
   ![Meta-Drive-1](https://user-images.githubusercontent.com/103599179/235833837-3fd981be-8183-4071-a02b-e41c1aa9621d.png)
-
+  ### Display Component
 
   ![Meta-Drive-2](https://user-images.githubusercontent.com/103599179/235833852-fff44067-c674-4b1c-8f44-2918383d2188.png)
-
+  ### Modal and Footer Component
 
   ![Meta-Drive-3](https://user-images.githubusercontent.com/103599179/235833860-273481d4-6b79-4b89-b0b4-fa8cbb3a27a5.png)
 
