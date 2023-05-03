@@ -46,17 +46,16 @@ const Display = ({ contract, account }) => {
           <a href={item} key={i} target="_blank">
             <img
               key={i}
-              src={`https://gateway.pinata.cloud/ipfs/${item.substring(6)}`}
-              alt={`${item.substring(6)}`}
+              src={`https:${item.substring(6)}`}
+              alt="Click to View File"
               className="image-list"
-              
             ></img>
           </a>
         );
       });
       setData(images);
     } else {
-      alert("No image to display");
+      alert("No Files to display");
     }
   };
   return (
@@ -118,7 +117,6 @@ const Display = ({ contract, account }) => {
       </div>
   
       </div>
-
 
       </div>
       </div>

@@ -4,7 +4,7 @@ import "./FileUpload.css";
 
 const FileUpload = ({ contract, account, provider }) => {
   const [file, setFile] = useState(null);
-  const [fileName, setFileName] = useState("No image selected");
+  const [fileName, setFileName] = useState("No File selected");
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (file) {
@@ -17,22 +17,22 @@ const FileUpload = ({ contract, account, provider }) => {
           url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
           data: formData,
           headers: {
-            pinata_api_key: `Your Pinata API Key`,
-            pinata_secret_api_key: `Your Pinata Secret Key`,
+            pinata_api_key: `Your Pinata API KEY`,
+            pinata_secret_api_key: `Your Secret API KEY`,
             "Content-Type": "multipart/form-data",
           },
         });
         const ImgHash = `https://gateway.pinata.cloud/ipfs/${resFile.data.IpfsHash}`;
         contract.add(account,ImgHash);
-        alert("Successfully Image Uploaded");
-        setFileName("No image selected");
+        alert("Successfully File Uploaded");
+        setFileName("No File selected");
         setFile(null);
       } catch (e) {
-        alert("Unable to upload image to Pinata");
+        alert("Unable to upload File to Pinata");
       }
     }
-    alert("Successfully Image Uploaded");
-    setFileName("No image selected");
+    // alert("Successfully File Uploaded");
+    setFileName("No File selected");
     setFile(null);
   };
   const retrieveFile = (e) => {
@@ -50,7 +50,7 @@ const FileUpload = ({ contract, account, provider }) => {
     <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
       <form className="p-5 sm:w-96 w-full flex flex-col justify-center items-center blue-glassmorphism" onSubmit={handleSubmit}>
         <label htmlFor="file-upload" className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd] text-white mb-5">
-          Choose Image
+          Choose File
         </label>
         <input
           disabled={!account}
@@ -59,7 +59,7 @@ const FileUpload = ({ contract, account, provider }) => {
           name="data"
           onChange={retrieveFile}
         />
-        <span className="textArea">Image: {fileName}</span>
+        <span className="textArea">File: {fileName}</span>
         <button type="submit" className="text-white w-full mt-5 border-[1px] p-1 border-[#3d4f7c] rounded-full cursor-pointer hover:bg-[#2546bd]" disabled={!file}>
           Upload File
         </button>

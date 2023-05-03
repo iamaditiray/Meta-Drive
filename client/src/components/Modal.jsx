@@ -3,7 +3,7 @@ import "./Modal.css";
 
 const Modal = ({ setModalOpen, contract }) => {
   const sharing = async () => {
-    const address = document.querySelector(".address").value;
+    const address = document.querySelector("#address").value;
     await contract.allow(address);
     setModalOpen(false);
   };
@@ -31,7 +31,7 @@ const Modal = ({ setModalOpen, contract }) => {
           <div className="body">
             <input
               type="text"
-              className="address"
+              className="address" id="address"
               placeholder="Enter Address"
             ></input>
           </div>
