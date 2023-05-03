@@ -1,4 +1,5 @@
 
+
 # Meta Drive
 
 This project develops a Decentralized application "Meta-drive" that allows users to store and view their files on the IPFS network as well as allows them to share it with other users using the MetaMask account. We have used PINATA-> which is an NFT media management service that allows users to pin their content on IPFS thereby giving a fast and easy way to both technical and non-technical creators to share and manage their files.
@@ -9,20 +10,6 @@ The files will be stored using content addressing, which assigns a unique conten
 The necessary resources needed for this project are: React.js, ethers, hardhat configuration, Solidity and IPFS.
 
 
-
-
-
-## API Reference
-
-#### PINATA API KEY
-
-  https://www.pinata.cloud/
-  
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-| `secret_api_key` | `string` | **Required**. Your Secret API key |
 
 
 
@@ -82,9 +69,93 @@ export default {
 @tailwind utilities;
 ```
 
-##### Now Run this on Terminal
+### Now Run this on Terminal to check functionality
 ```bash
 npm run dev
 ```
 
+# Starting Local Ethereum Network using Hardhat
+
+The command below starts a local Ethereum network using the Hardhat development environment. This network is commonly used for testing and developing decentralized applications (DApps) without having to interact with the real Ethereum network, which can be expensive and time-consuming. The cmd below lists some accounts with their private keys in your terminal. We need to import those accounts in the browser's MetaMask wallet to use the test ether for performing the operations after deploying our smart contract.
+
+```bash
+npx hardhat node
+```
+After ruuning the above cmd we must deploy our smart contract by the deployment migration script "deploy.js" using the following cmd.
+
+```bash
+npx hardhat run --network localhost scripts/deploy.js
+```
+The above cmd will generate an output like:
+Library deployed to:<hashcode>
+The above hashcode must be pasted in App.js
+```bash
+let contractAddress = "Your Contract Address";
+```
+
+### Installing axios API
+```bash
+npm install axios
+```
+Generating an API KEY after making an account on PINATA.
+The generated api key and secret api key must be pasted in FileUpload.js in the variable pinata_api_key and pinata_secret_api_key.
+
+
+
+
+
+
     
+## API Reference
+
+#### PINATA API KEY
+
+Go to this Site
+  https://www.pinata.cloud/
+
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+| `secret_api_key` | `string` | **Required**. Your Secret API key |
+
+
+
+## Run Locally
+
+#### 1. Clone the project
+
+```bash
+  git clone https://github.com/iamaditiray/Meta-Drive.git
+```
+#### 2. Install dependencies as mentioned earlier
+
+#### 3. Start the local Ethereum network using Hardhat
+
+```bash
+  npx hardhat node
+```
+#### 4. Copy the contract address as paste in App.jsx
+
+#### 5. Deploy Smart Contract
+
+```bash
+  npx hardhat run --network localhost scripts/deploy.js
+```
+
+#### 6. Start the server
+
+```bash
+  npm run dev
+```
+
+
+
+
+## Screenshots
+
+![App Screenshot](https://drive.google.com/file/d/1QpZYyQZ8JWbC47fb6Bq6XAdIsFPQhn6I/view?usp=sharing)
+
+![App Screenshot](https://drive.google.com/file/d/1c1pNfnqZTIhiwoUO8l_K6DPWLtBiQJ-a/view?usp=share_link)
+
+![App Screenshot](https://drive.google.com/file/d/1UZkETMbmdHNgHno_Gxd9_Tnwzojz5KuJ/view?usp=sharing)
