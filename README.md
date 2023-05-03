@@ -16,9 +16,8 @@ The necessary resources needed for this project are: React.js, ethers, hardhat c
 
 #### PINATA API KEY
 
-```http
   https://www.pinata.cloud/
-```
+  
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
