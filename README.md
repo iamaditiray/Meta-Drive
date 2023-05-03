@@ -1,7 +1,7 @@
 
 
 # Meta Drive
-
+ ![Meta-Drive-1](https://user-images.githubusercontent.com/103599179/235833837-3fd981be-8183-4071-a02b-e41c1aa9621d.png)
 This project develops a Decentralized application "Meta-drive" that allows users to store and view their files on the IPFS network as well as allows them to share it with other users using the MetaMask account. We have used PINATA-> which is an NFT media management service that allows users to pin their content on IPFS thereby giving a fast and easy way to both technical and non-technical creators to share and manage their files.
 The files will be stored using content addressing, which assigns a unique content identifier (CID) to each file, making it easy for users to retrieve and access their files. The smart contract will manage the sharing process, ensuring that only authorized users can access the shared files. The system will use Ethereum blockchain technology to provide a secure and transparent sharing platform.
 
