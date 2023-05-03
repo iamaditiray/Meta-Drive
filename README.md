@@ -153,15 +153,23 @@ Go to this Site
 
 
 ## Screenshots
-  ### FileUpload Component
+ - STEP 1: This demonstrates the landing page which displays the Meta-Mask Address 
+ ![Meta-Drive-1](https://user-images.githubusercontent.com/103599179/235967610-6205d0b3-391c-493d-bbd4-062eccc98e06.png)
 
-  ![Meta-Drive-1](https://user-images.githubusercontent.com/103599179/235833837-3fd981be-8183-4071-a02b-e41c1aa9621d.png)
-  ### Display Component
+ - STEP 2: Here we are choosing the MetaMask account through which we want to upload our image. 
+ ![WhatsApp Image 2023-05-03 at 3 47 54 PM](https://user-images.githubusercontent.com/103599179/235967931-1fc59f8f-4dd9-4ef1-af9b-35e9d0121fb4.jpeg)
 
-  ![Meta-Drive-2](https://user-images.githubusercontent.com/103599179/235833852-fff44067-c674-4b1c-8f44-2918383d2188.png)
-  ### Modal and Footer Component
+- STEP 3: This is the dialog box that appears for choosing the file. Then we need to click upload. 
+![WhatsApp Image 2023-05-03 at 3 48 01 PM](https://user-images.githubusercontent.com/103599179/235968244-f69896e3-666f-4938-a294-b62ac0982bbe.jpeg)
 
-  ![Meta-Drive-3](https://user-images.githubusercontent.com/103599179/235833860-273481d4-6b79-4b89-b0b4-fa8cbb3a27a5.png)
+- STEP 4: Then we need to confirm the transaction occurring through MetaMask Wallet. 
+![WhatsApp Image 2023-05-03 at 3 49 37 PM](https://user-images.githubusercontent.com/103599179/235968623-4a2898ae-3a4a-4b80-ae4b-773775967d9c.jpeg)
+
+- STEP 5: Finally, we can view our uploaded image by clicking on “Get Data” 
+![WhatsApp Image 2023-05-03 at 3 55 39 PM](https://user-images.githubusercontent.com/103599179/235968791-67d8fb1b-14f7-4789-b6a9-69a49b63da7e.jpeg)
+
+The Dialog box below enables the user to share the access of his account with another user by specifying his MetaMask account address. 
+![WhatsApp Image 2023-05-03 at 3 57 35 PM](https://user-images.githubusercontent.com/103599179/235968953-665f0170-508c-4e68-a9f4-9354abd8fadc.jpeg)
 
 # Acknowledgements
 ### Books
