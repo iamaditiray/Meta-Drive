@@ -174,3 +174,8 @@ Go to this Site
 ### Youtube Channels
  - [Code-Eater Web3](https://www.youtube.com/@codeeaterweb3971)
  - [Javascript Mastery](https://www.youtube.com/@javascriptmastery)
+
+## Authors
+- [Aditi Ray](https://github.com/iamaditiray)
+- [Mursalin Sheikh](https://github.com/mosabhai77)
+- [Shagun Singh](https://www.github.com/octokatherine)
